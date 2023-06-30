@@ -1,0 +1,30 @@
+.contenedor {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+
+    /* grid */
+    display:grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-auto-columns:   100px;
+    grid-auto-flow: column;
+    gap:20px
+}
+
+.item {
+    background: #00bcd4;
+    display: grid;
+    justify-content: end;
+    align-items: end;
+}
+ p{
+    background-color: aqua;
+    height: 50px;
+    width: 30px;
+    display: grid;
+    justify-content:center;
+    align-items: center;
+    font-size: 50px;
+    font-style: bold;
+    color:#3f51b5 ;
+
+ }
