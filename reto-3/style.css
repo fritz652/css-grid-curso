@@ -1,42 +1,60 @@
 body {
     margin: 0;
     padding: 0;
+    background: rgb(169, 238, 169);
 }
 
 .contenedor {
-    background: rgb(169, 238, 169);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 
-    gap: 20px;
-    place-items: center ;
+    
 
     grid-template-areas: 
-    "header header header"
-    "section section side"
-    "section section side"
-    "footer footer footer";
+    "uno dos dos"
+    "uno dos dos"
+    "tres tres cuatro"
+    "tres tres cuatro"
+    "cinco cinco seis"
+    "cinco cinco seis";
+
+    margin: 20px;
+    gap: 20px;
+    place-items: center ;
 }
 
 .item {
+    display: grid;
+    justify-content: center;
+    align-content: center;
     background: rgb(174, 174, 241);
     width: 100%;
-    height: 100%;
+    height: 200px;
+    border-radius:  10px;
+    font-size: 50px;
 }
 
 .item-1 {
-    grid-area: header;
+    grid-area: uno;
 }
 
 .item-2 {
-    grid-area: section;
+    grid-area: dos;
 }
 
 .item-3 {
-    grid-area: side;
+    grid-area: tres;
 }
 
 .item-4 {
-    grid-area: footer;
+    grid-area: cuatro;
+}
+
+.item-5 {
+    grid-area: cinco;
+}
+
+.item-6 {
+    grid-area: seis;
 }
